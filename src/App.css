@@ -1,0 +1,63 @@
+/* ------------------------------------------- */
+/* GLOBAL and BASE STYLES                      */
+/* ------------------------------------------- */
+
+/* NEW: Smooth scrolling for navbar links */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* NEW: Dark background for the entire page */
+    background-color: black; 
+    /* Adjusting text color for high contrast on black background */
+    color: #f0f2f5; 
+    
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure all images scale down nicely */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Base Responsive Typography */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+@media (max-width: 768px) {
+    /* Scale down font sizes slightly on mobile for better fit */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+}
+
+/* ------------------------------------------- */
+/* SUMMARY GRID: About Me & Objectives Layout  */
+/* ------------------------------------------- */
+
+.summary-grid {
+    display: grid;
+    /* On large screens, two columns of equal size */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; /* Space between the two columns */
+    padding: 20px 40px; /* Padding for the container */
+    max-width: 1200px; /* Limit width for aesthetics */
+    margin: 0 auto;
+    border-bottom: 2px solid #333; /* Adjusted border color for dark mode */
+    margin-bottom: 20px;
+}
+
+/* 👇 Mobile breakpoint for Summary Grid */
+@media (max-width: 768px) {
+    .summary-grid {
+        /* Changes to a single column layout */
+        grid-template-columns: 1fr;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
