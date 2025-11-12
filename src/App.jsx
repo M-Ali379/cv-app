@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import Navbar from './component/navbar';
+import Navbar from './component/Navbar';
 
 import About from "./component/About";
 import Objectives from './component/Objectives';
