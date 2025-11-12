@@ -11,7 +11,7 @@ body {
     /* NEW: Dark background for the entire page */
     background-color: black; 
     /* Adjusting text color for high contrast on black background */
-    color: #f0f2f5; 
+    color: #060d17; 
     
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -49,7 +49,7 @@ h3 { font-size: 1.5rem; }
     padding: 20px 40px; /* Padding for the container */
     max-width: 1200px; /* Limit width for aesthetics */
     margin: 0 auto;
-    border-bottom: 2px solid #333; /* Adjusted border color for dark mode */
+    border-bottom: 2px solid #090000; /* Adjusted border color for dark mode */
     margin-bottom: 20px;
 }
 

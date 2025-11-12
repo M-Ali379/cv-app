@@ -5,7 +5,7 @@
 }
 
 .skills h1 {
-  color: #f8f9fb;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .skill-item {
-  background-color: white;
-  border: 1px solid #ddd;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #a70d0d;
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.851);
@@ -27,5 +27,5 @@
 
 .skill-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(253, 254, 254, 0.945);
+  box-shadow: 0 4px 10px rgba(0, 165, 165, 0.945);
 }
