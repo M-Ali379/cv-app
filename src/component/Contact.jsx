@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Github,Linkedin,Mail   } from 'lucide-react';
+
 
 function Contact() {
   return (
@@ -14,13 +15,13 @@ function Contact() {
         {/* Social Links */}
         <div className="social-icons">
           <a href="https://github.com/M-Ali379" target="_blank" rel="noreferrer">
-            <FaGithub />
+            <Github />
           </a>
           <a href="https://www.linkedin.com/in/aliwebdev1/" target="_blank" rel="noreferrer">
-            <FaLinkedin />
+            <Linkedin />
           </a>
           <a href="mailto:muhammadsiddiqui1214@gmail.com">
-            <FaEnvelope />
+            <Mail  />
           </a>
         </div>
 
