@@ -1,16 +1,10 @@
-/* ------------------------------------------- */
-/* GLOBAL and BASE STYLES                      */
-/* ------------------------------------------- */
-
-/* NEW: Smooth scrolling for navbar links */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    /* NEW: Dark background for the entire page */
     background-color: black; 
-    /* Adjusting text color for high contrast on black background */
+
     color: #060d17; 
     
     font-family: 'Inter', sans-serif;
@@ -19,28 +13,21 @@ body {
     padding: 0;
 }
 
-/* Ensure all images scale down nicely */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Base Responsive Typography */
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
 @media (max-width: 768px) {
-    /* Scale down font sizes slightly on mobile for better fit */
+  */
     h1 { font-size: 2rem; }
     h2 { font-size: 1.75rem; }
     h3 { font-size: 1.25rem; }
 }
-
-/* ------------------------------------------- */
-/* SUMMARY GRID: About Me & Objectives Layout  */
-/* ------------------------------------------- */
-
 .summary-grid {
     display: grid;
     /* On large screens, two columns of equal size */
@@ -61,3 +48,12 @@ h3 { font-size: 1.5rem; }
         padding: 20px; /* Adjust padding for smaller screens */
     }
 }
+
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+

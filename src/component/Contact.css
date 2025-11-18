@@ -1,50 +1,101 @@
-.footer {
-  background-color: #1e1e1e;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.footer-content h2 {
-  color: #00bfff;
-  margin-bottom: 15px;
-}
-
-.footer a {
-  color: #00bfff;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.social-icons {
-  margin-top: 15px;
+/* ================================
+   Main layout
+================================ */
+.contact-section {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 30px;
+  background: #000;
+  color: white;
+  flex-wrap: wrap; /* responsive */
+  text-align: center;
+}
+
+/* ================================
+   Left (About section)
+================================ */
+/* ================================
+   Left (About Box — now same style)
+================================ */
+.contact-left {
+  flex: 1;
+  min-width: 320px;
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(121, 121, 200, 0.851);
+  transition: 0.2s ease;
+}
+
+/* Hover effect (same as contact-right) */
+.contact-left:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 10px rgba(230, 4, 4, 0.945);
+}
+
+
+/* ================================
+   Right (Contact Box)
+================================ */
+.contact-right {
+  flex: 1;
+  min-width: 320px;
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(121, 121, 200, 0.851);
+  transition: 0.2s ease;
+}
+
+.contact-right:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 10px rgba(230, 4, 4, 0.945);
+}
+
+/* ================================
+   Social Icons
+================================ */
+.social-icons {
+  margin: 20px 0;
+  display: flex;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .social-icons a {
-  font-size: 1.8rem;
-  color: #ffffff;
-  transition: color 0.3s ease;
+  color: white;
+  font-size: 24px;
+  transition: 0.2s;
+  
 }
 
 .social-icons a:hover {
-  color: #00bfff;
+  transform: scale(1.2);
+  color: #0af;
 }
 
-.footer hr {
-  border: 0;
-  border-top: 1px solid #444;
-  margin: 25px auto;
-  width: 80%;
-}
-
+/* ================================
+   Footer Text
+================================ */
 .footer-copy {
-  font-size: 0.9rem;
-  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.8;
+  background-color: white;
+}
+
+/* ================================
+   Links
+================================ */
+.contact-right a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+.contact-right a:hover {
+  text-decoration: underline;
 }

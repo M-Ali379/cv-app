@@ -1,28 +1,18 @@
 .about {
   padding: 50px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #000000;
+  color: #fffefe;
 }
 
 .about h1 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
-  color: #222;
+  color: #fafafa;
 }
 
 .about-sections {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.about-section h2 {
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.about-section ul {
-  list-style-type: disc;
-  margin-left: 20px;
 }
