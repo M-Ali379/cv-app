@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #000;
+  --color-secondary: #060d17;
+  --color-text: #fff;
+  --color-accent: #007bff;
+  --color-accent-hover: #0056b3;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --spacing-unit: 8px;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+  --font-family: 'Inter', sans-serif;
+  --nav-height: 80px;
+}
