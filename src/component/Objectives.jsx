@@ -1,6 +1,9 @@
 import React from "react";
 import "./Objectives.css";
 
+/**
+ * Objectives component – displays the career objective statement.
+ */
 function Objectives() {
   return (
     <section id="Objectives" className="objectives">

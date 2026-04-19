@@ -5,7 +5,7 @@ import Navbar from './component/Navbar';
 import Objectives from './component/Objectives';
 import Skills from './component/Skills';
 import Education from './component/Education';
-import Protfolio from './component/Protfolio';
+import Portfolio from './component/Portfolio';
 import Experience from './component/Experience';
 import Contact from './component/Contact';
 
@@ -26,7 +26,7 @@ function App() {
     <Skills/>
     
     <hr/>
-    <Protfolio/>
+    <Portfolio/>
     
     {/*Footer of the page */} 
     <hr/>

@@ -3,7 +3,10 @@ import "./Navbar.css";
 import Picture from "../assets/profile.png";
 import { useState, useEffect } from 'react';
 
-
+/**
+ * Navbar component – sticky navigation bar that hides on scroll-down
+ * and reappears on scroll-up.
+ */
 function Navbar() {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -35,7 +38,7 @@ function Navbar() {
           WEB Developer
           <br />
           <button className='download-btn'>
-            <a href='./CV.pdf' Download target='_blank'>
+            <a href='./CV.pdf' download target='_blank'>
               Download CV
             </a>  </button>
           <button className="hire">
@@ -50,7 +53,7 @@ function Navbar() {
         <ul className="navbar-links">
 
           <li><a href="#Skills">Skill's</a></li>
-          <li><a href="#Protfolio">Project's</a></li>
+          <li><a href="#Portfolio">Project's</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>

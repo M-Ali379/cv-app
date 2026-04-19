@@ -1,6 +1,9 @@
 import React from 'react';
 import './About.css';
 
+/**
+ * About component – brief personal introduction section.
+ */
 function About() {
   return (
     <>
