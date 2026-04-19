@@ -1,4 +1,3 @@
-import React from 'react';
 import "./Navbar.css";
 import Picture from "../assets/profile.png";
 import { useState, useEffect } from 'react';
