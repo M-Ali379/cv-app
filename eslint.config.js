@@ -23,7 +23,18 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // Variables
+      'no-unused-vars': ['warn', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^_' }],
+      'no-var': 'error',
+      'prefer-const': 'warn',
+
+      // Code quality
+      'eqeqeq': ['error', 'always'],
+      'no-console': ['warn', { allow: ['error', 'warn'] }],
+      'no-debugger': 'error',
+
+      // React best practices (react-hooks plugin already covers hooks)
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
   },
 ])
