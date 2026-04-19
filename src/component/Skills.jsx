@@ -1,6 +1,9 @@
 import React from "react";
 import "./Skills.css";
 
+/**
+ * Skills component – renders a grid of professional skills.
+ */
 function Skills() {
   const skills = [
     "HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS",

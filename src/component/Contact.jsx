@@ -3,6 +3,10 @@ import "./Contact.css";
 import { Github, Linkedin, Mail } from 'lucide-react';
 import About from "./About";
 
+/**
+ * Contact component – displays contact information, social media links,
+ * and embeds the About section. Includes a semantic footer.
+ */
 function Contact() {
   return (<>
     <section id="Contact" className="contact-section">
@@ -39,7 +43,9 @@ function Contact() {
      
          </section>
          <hr />
-        <p className="footer-copy">© 2025 Muhammad Ali | All Rights Reserved</p>
+        <footer>
+          <p className="footer-copy">© 2025 Muhammad Ali | All Rights Reserved</p>
+        </footer>
          </>
   
   );

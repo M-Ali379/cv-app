@@ -1,6 +1,9 @@
 import React from "react";
 import "./Experience.css";
 
+/**
+ * Experience component – lists professional work experience.
+ */
 function Experience() {
   return (
     <>

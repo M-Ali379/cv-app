@@ -1,6 +1,9 @@
 import React from "react";
 import "./Education.css";
 
+/**
+ * Education component – lists academic qualifications.
+ */
 function Education() {
   return (
     <section id="Education" className="education">

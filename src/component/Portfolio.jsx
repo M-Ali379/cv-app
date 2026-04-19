@@ -1,6 +1,10 @@
 import React from "react";
 import "./Portfolio.css"; // Ensure this import is present and correct
 
+/**
+ * Portfolio component – displays a grid of project cards.
+ * Each card links to the corresponding GitHub repository.
+ */
 function Portfolio() {
   const githubProfile = "https://github.com/M-Ali379";
 
