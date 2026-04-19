@@ -1,7 +1,7 @@
-import React from "react";
 import "./Contact.css";
 import { Github, Linkedin, Mail } from 'lucide-react';
 import About from "./About";
+import { PERSONAL_INFO, SOCIAL_LINKS } from "../config/constants";
 
 function Contact() {
   return (<>
@@ -16,32 +16,31 @@ function Contact() {
       <div className="contact-right">
         <h2>📞 Contact Me</h2>
 
-        <p>Email: <a href="mailto:muhammadsiddiqui1214@gmail.com">
-          muhammadsiddiqui1214@gmail.com
+        <p>Email: <a href={`mailto:${PERSONAL_INFO.email}`}>
+          {PERSONAL_INFO.email}
         </a></p>
 
-        <p>Phone: +92 310 6213737</p>
-        <p>Location: Lahore, Pakistan</p>
+        <p>Phone: {PERSONAL_INFO.phone}</p>
+        <p>Location: {PERSONAL_INFO.location}</p>
 
         {/* Social icons */}
         <div className="social-icons">
-          <a href="https://github.com/M-Ali379" target="_blank" rel="noreferrer">
+          <a href={SOCIAL_LINKS.github} target="_blank" rel="noreferrer">
             <Github />
           </a>
-          <a href="https://www.linkedin.com/in/aliwebdev1/" target="_blank" rel="noreferrer">
+          <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noreferrer">
             <Linkedin />
           </a>
-          <a href="mailto:muhammadsiddiqui1214@gmail.com">
+          <a href={`mailto:${PERSONAL_INFO.email}`}>
             <Mail />
           </a>
         </div>
       </div>
-     
-         </section>
-         <hr />
-        <p className="footer-copy">© 2025 Muhammad Ali | All Rights Reserved</p>
-         </>
-  
+
+    </section>
+    <hr />
+    <p className="footer-copy">© 2025 {PERSONAL_INFO.name} | All Rights Reserved</p>
+  </>
   );
 }
 
