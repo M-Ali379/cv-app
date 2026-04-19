@@ -1,36 +1,35 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react';
 import './App.css';
+import './styles/variables.css';
 import Navbar from './component/Navbar';
+import LoadingSpinner from './component/LoadingSpinner';
 
-import Objectives from './component/Objectives';
-import Skills from './component/Skills';
-import Education from './component/Education';
-import Protfolio from './component/Protfolio';
-import Experience from './component/Experience';
-import Contact from './component/Contact';
-
-
+const Objectives = lazy(() => import('./component/Objectives'));
+const Skills = lazy(() => import('./component/Skills'));
+const Education = lazy(() => import('./component/Education'));
+const Portfolio = lazy(() => import('./component/Protfolio'));
+const Experience = lazy(() => import('./component/Experience'));
+const Contact = lazy(() => import('./component/Contact'));
 
 function App() {
-
   return (
     <>
-    <Navbar/>
-    <hr/>
-    <Objectives/>
-    <hr/>
-    <Education/>
-    <hr/>
-    <Experience/>
-    <hr/>
-    <Skills/>
-    
-    <hr/>
-    <Protfolio/>
-    
-    {/*Footer of the page */} 
-    <hr/>
-    <Contact/>   
+      <Navbar />
+      <hr />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Objectives />
+        <hr />
+        <Education />
+        <hr />
+        <Experience />
+        <hr />
+        <Skills />
+        <hr />
+        <Portfolio />
+        {/* Footer of the page */}
+        <hr />
+        <Contact />
+      </Suspense>
     </>
   );
 }
