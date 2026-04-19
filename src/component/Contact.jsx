@@ -25,17 +25,23 @@ function Contact() {
           <p>Location: Lahore, Pakistan</p>
 
           {/* Social icons */}
-          <div className="social-icons" role="list">
-            <a href="https://github.com/M-Ali379" target="_blank" rel="noreferrer" aria-label="Visit Muhammad Ali's GitHub profile" role="listitem">
-              <Github aria-hidden="true" />
-            </a>
-            <a href="https://www.linkedin.com/in/aliwebdev1/" target="_blank" rel="noreferrer" aria-label="Visit Muhammad Ali's LinkedIn profile" role="listitem">
-              <Linkedin aria-hidden="true" />
-            </a>
-            <a href="mailto:muhammadsiddiqui1214@gmail.com" aria-label="Send email to Muhammad Ali" role="listitem">
-              <Mail aria-hidden="true" />
-            </a>
-          </div>
+          <ul className="social-icons">
+            <li>
+              <a href="https://github.com/M-Ali379" target="_blank" rel="noreferrer" aria-label="Visit Muhammad Ali's GitHub profile">
+                <Github aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/aliwebdev1/" target="_blank" rel="noreferrer" aria-label="Visit Muhammad Ali's LinkedIn profile">
+                <Linkedin aria-hidden="true" />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:muhammadsiddiqui1214@gmail.com" aria-label="Send email to Muhammad Ali">
+                <Mail aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
         </div>
 
       </section>

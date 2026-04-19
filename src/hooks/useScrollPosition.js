@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 /**
  * Custom hook to track scroll position and direction.
@@ -7,19 +7,19 @@ import { useState, useEffect, useCallback } from 'react';
 function useScrollPosition() {
   const [scrollY, setScrollY] = useState(0);
   const [scrollDirection, setScrollDirection] = useState('up');
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const handleScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-    setScrollDirection(currentScrollY > lastScrollY ? 'down' : 'up');
-    setScrollY(currentScrollY);
-    setLastScrollY(currentScrollY);
-  }, [lastScrollY]);
+  const lastScrollYRef = useRef(0);
 
   useEffect(() => {
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      setScrollDirection(currentScrollY > lastScrollYRef.current ? 'down' : 'up');
+      setScrollY(currentScrollY);
+      lastScrollYRef.current = currentScrollY;
+    }
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [handleScroll]);
+  }, []);
 
   return { scrollY, scrollDirection };
 }

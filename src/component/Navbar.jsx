@@ -19,21 +19,17 @@ function Navbar() {
           <hr />
           WEB Developer
           <br />
-          <button className='download-btn' aria-label="Download CV as PDF">
-            <a href='./CV.pdf' download target='_blank' rel="noreferrer">
-              Download CV
-            </a>
-          </button>
-          <button className="hire" aria-label="Hire Muhammad Ali">
-            <a href="#Contact">Hire Me</a>
-          </button>
+          <a href='./CV.pdf' download target='_blank' rel="noreferrer" className='download-btn'>
+            Download CV
+          </a>
+          <a href="#Contact" className="hire">Hire Me</a>
         </div>
 
-        <ul className="navbar-links" role="list">
-          <li><a href="#Skills" aria-label="Go to Skills section">Skills</a></li>
-          <li><a href="#Portfolio" aria-label="Go to Portfolio section">Projects</a></li>
-          <li><a href="#About" aria-label="Go to About section">About</a></li>
-          <li><a href="#Contact" aria-label="Go to Contact section">Contact</a></li>
+        <ul className="navbar-links">
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Portfolio">Projects</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
     </>
